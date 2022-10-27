@@ -12,7 +12,7 @@ const long maxPotValue = 1023;
 const long minLedValue = 0;
 const long maxLedValue = 255;
 
-const int anodComun = 0;
+const byte anodComun = 0;
  
 int redPotValue, greenPotValue, bluePotValue;
 
@@ -26,8 +26,6 @@ void setup() {
   pinMode(redPotPin, INPUT);
   pinMode(greenPotPin, INPUT);
   pinMode(bluePotPin, INPUT);
-
-  Serial.begin(9600);
 }
  
 void loop() {
@@ -46,9 +44,9 @@ void loop() {
  
 void setColor(int redValue, int greenValue, int blueValue){
   if(anodComun) {
-    redValue = 255 - redValue;
-    greenValue = 255 - greenValue;
-    blueValue = 255 - blueValue;
+    redValue = maxLedValue - redValue;
+    greenValue = maxLedValue - greenValue;
+    blueValue = maxLedValue - blueValue;
   }
   analogWrite(redLedPin, redValue);
   analogWrite(greenLedPin, greenValue);
