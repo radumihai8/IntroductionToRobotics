@@ -15,4 +15,5 @@ Use a separate potentiometer in controlling each of the color of the RGB led.  T
 https://imgur.com/a/9RVxIL8
 
 ##### Video URL:
+https://youtube.com/shorts/4J-0wRpqHRw
 
