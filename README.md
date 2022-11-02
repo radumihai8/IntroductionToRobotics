@@ -34,7 +34,7 @@ The system has the following states:
 4. **State 4** (initiated after state 3 ends):  red for cars,blinking greenfor people and a beeping sound from the buzzer,  at a constant in-terval,  faster than the beeping in state 3.  This state should last 4 seconds.
 
 ##### Setup pictures:
-https://imgur.com/a/9RVxIL8
+https://imgur.com/Yjkr31X
 
 ##### Video URL:
-https://youtube.com/shorts/4J-0wRpqHRw
+https://youtu.be/LLe9BP7FNYA
