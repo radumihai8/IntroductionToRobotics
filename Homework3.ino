@@ -35,6 +35,8 @@ const int blinkTime = 400;
 bool currentPosState = LOW;
 unsigned long lastBlinkTime = 0;
 
+const int directionsCount = 4;
+
 int currentState = 1;
 
 byte activeLeds[segSize] = {LOW, LOW, LOW, LOW, LOW, LOW, LOW, LOW};
@@ -43,7 +45,7 @@ int segments[segSize] = {
   pinA, pinB, pinC, pinD, pinE, pinF, pinG, pinDP
 };
 
-int movementMatrix[10][10] = {
+int movementMatrix[segSize][directionsCount] = {
   // UP, DOWN, LEFT, RIGHT
   {-1, 6, 5, 1}, //0 - a
   {0, 6, 5, -1}, //1 - b
