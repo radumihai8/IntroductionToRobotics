@@ -38,3 +38,22 @@ https://imgur.com/Yjkr31X
 
 ##### Video URL:
 https://youtu.be/LLe9BP7FNYA
+
+## Homework 3
+##### Components: 
+1. 1 7-Segment display
+2. 1 Joystick
+3. Resistors and wires (per logic)
+
+##### Technical Task:
+Use the joystick to control the position ofthe segment and ”draw” on the display.  The movement between segmentsshould be natural (meaning they should jump from the current positiononly to neighbors, but without passing through ”walls”.
+
+The system has the following states:
+1. **State 1** (default,  but also initiated after a  button press in State2): Current  position blinking.Can use the joystick to  move from one position to neighbors. Short pressing the  button toggles  state 2. Long pressing the button in state 1 resets the entire display by turning all the segments OFF and moving the current position to the decimal point.
+2. **State 2** (initiated  after a button press in State  1): The current segment stops  blinking, adopting the state of the  segment before selection (ON or OFF). Toggling the X (or Y, you chose) axis should change  the  segment  state  from  ON  to OFF or from OFF to ON. Clicking the joystick should save the segment state and exit back to state 1.
+
+##### Setup pictures:
+https://imgur.com/UGH8V1O
+
+##### Video URL:
+https://youtu.be/8JOLg_aSXKA
