@@ -21,8 +21,8 @@ const int segD4 = 4;
 bool joyMoved = false;
 int xValue = 0;
 int yValue = 0;
-int minThreshold = 400;
-int maxThreshold = 600;
+const int minThreshold = 400;
+const int maxThreshold = 600;
 
 byte swState = LOW;
 byte lastSwState = HIGH;
@@ -72,9 +72,9 @@ void setup() {
   for (int i = 0; i < displayCount; i++) {
     pinMode(displayDigits[i], OUTPUT);
     digitalWrite(displayDigits[i], LOW);
-    pinMode(pinSW, INPUT_PULLUP);
   }
-  Serial.begin(9600);
+  pinMode(pinSW, INPUT_PULLUP);
+
 }
 
 void loop(){
