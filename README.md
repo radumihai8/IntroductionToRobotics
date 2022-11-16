@@ -57,3 +57,23 @@ https://imgur.com/UGH8V1O
 
 ##### Video URL:
 https://youtu.be/8JOLg_aSXKA
+
+## Homework 4
+##### Components: 
+1. 1 4 digit 7-Segment display
+2. 1 Joystick
+3. 1 74hc595 shift rgister
+4. Resistors and wires (per logic)
+
+##### Technical Task:
+Use the joystick to move through the 4 digit 7segment displays digits, press the button to lock in on the current digitand use the other axis to increment or decrement the number.  Keep thebutton pressed to reset all the digit values and the current position to thefirst digit in the first state.
+
+The system has the following states:
+1. **State 1** you can use a joystick axis to cycle through the 4 digits; using the other axis does nothing.  A blinking decimal point shows the current digit position.  When pressing the button, you lock in onthe selected digit and enter the second state.
+2. **State 2** in this state, the decimal point stays always on, no longer blinking and you can no longer use the axis to cycle throughthe  4  digits.  Instead,  using  the  other  axis,  you  can  increment  on decrement  the  number  on  the  current  digit  IN  HEX  (aka  from  0 to F, as in the lab).  Pressing the button again returns you to the previous state
+
+##### Setup pictures:
+https://imgur.com/ki9f6Tq
+
+##### Video URL:
+https://youtube.com/shorts/MU2bjM-qboI
