@@ -119,10 +119,10 @@ text?)
 – Player name?
 – etc
 4. Upon game ending:
-(a) Screen 1: a message such as ”Congratulations on reaching level/score
+- (a) Screen 1: a message such as ”Congratulations on reaching level/score
 X”. ”You did better than y people.”. etc. Switches to screen 2
 upon interaction (button press) or after a few moments.
-(b) Screen 2: display relevant game info: score, time, lives left etc.
+- (b) Screen 2: display relevant game info: score, time, lives left etc.
 Must inform player if he/she beat the highscore. This
 menu should only be closed by the player, pressing a button.
 
